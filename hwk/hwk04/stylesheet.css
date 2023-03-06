@@ -1,0 +1,380 @@
+@font-face {
+    font-family: "Eugusto";
+    src: url("fonts/eugusto.otf");
+    }
+html{
+    background-color: black;
+}
+/*Using media queries to select right sized background image to download*/
+@media screen and (min-width: 320px) and (max-width: 400px) {
+    html { 
+      background: url('images/bg_small.jpg') no-repeat center center fixed; 
+    }
+    #text_clover{
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+  
+    #lucky_btn{
+      height: 48px;
+      width: 150px;
+      font-size: 20px;
+      border-radius: 5px;
+      padding-top: .5rem;
+      margin-top: 1vh;
+    }
+    .date, .time{
+      font-family: 'eugusto';
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    .date{
+      font-size: 14px;
+      margin: .5rem 0 1rem 0;
+      color: #213933;
+      padding-left: 5px;
+    }
+    .time{
+      font-size: 1rem;
+      margin: 0;
+      color: #D9DAAE;
+      position: fixed;
+      bottom: 7.7rem;
+      left: 50%;
+      margin-left: -140px;
+    }
+    #lg_bottom_btn{
+      display: none;
+    }
+    #md_bottom_btn{
+      width: 300px;
+      position: fixed;
+      bottom: 1rem;
+      left: 50%;
+      margin-left: -150px;
+    }
+  }
+
+@media screen and (min-width: 401px) and (max-width: 599px) {
+    html { 
+      background: url('images/bg_small.jpg') no-repeat center center fixed; 
+    }
+    #text_clover{
+      width: 110px;
+      height: 110px;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+  
+    #lucky_btn{
+      height: 62px;
+      width: 200px;
+      font-size: 28px;
+      border-radius: 8px;
+      padding-top: .5rem;
+      margin-top: .8rem;
+      margin-left: .5rem;
+    }
+    .date, .time{
+      font-family: 'eugusto';
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    .date{
+      font-size: 1.3rem;
+      margin: .5rem 0 1rem 0;
+      color: #213933;
+      padding-left: 1rem;
+    }
+    .time{
+      font-size: 1.3rem;
+      margin: 0;
+      color: #D9DAAE;
+      position: fixed;
+      bottom: 10.5rem;
+      left: 50%;
+      margin-left: -174px;
+    }
+    #lg_bottom_btn{
+      display: none;
+    }
+    #md_bottom_btn{
+      width: 390px;
+      position: fixed;
+      bottom: 1.5rem;
+      left: 50%;
+      margin-left: -195px;
+    }
+  }
+  
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  html { 
+    background: url('images/bg_small.jpg') no-repeat center center fixed; 
+  }
+  #text_clover{
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+  }
+
+  #lucky_btn{
+    height: 72px;
+    width: 245px;
+    font-size: 38px;
+    border-radius: 10px;
+    padding-top: .5rem;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+  }
+  .date, .time{
+    font-family: 'eugusto';
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+  .date{
+    font-size: 1.7rem;
+    margin: 1rem 0 1rem 0;
+    color: #213933;
+    padding-left: 1.5rem;
+  }
+  .time{
+    font-size: 1.5rem;
+    margin: 0;
+    color: #D9DAAE;
+    position: fixed;
+    bottom: 13rem;
+    left: 50%;
+    margin-left: -223px;
+  }
+  #lg_bottom_btn{
+    display: none;
+  }
+  #md_bottom_btn{
+    width: 500px;
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    margin-left: -250px; 
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  html {
+    background: url('images/bg_med.jpg') no-repeat center center fixed; 
+  }
+  #text_clover{
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    top: 3rem;
+    right: 2rem;
+  }
+
+  #lucky_btn{
+    height: 100px;
+    width: 350px;
+    font-size: 50px;
+    border-radius: 10px;
+    padding-top: .5rem;
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+  }
+  .date, .time{
+    font-family: 'eugusto';
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+  .date{
+    font-size: 1.8rem;
+    margin: 1.5rem 0 1rem 2rem;
+    color: #213933;
+  }
+  .time{
+    font-size: 2rem;
+    margin: 0;
+    color: #D9DAAE;
+    position: fixed;
+    bottom: 285px;
+    left: 50%;
+    margin-left: -279px;
+  }
+
+  #lg_bottom_btn{
+    display: none;
+  }
+  #md_bottom_btn{
+    width: 660px;
+    position: fixed;
+    bottom: 3rem;
+    left: 50%;
+    margin-left: -330px;
+  }
+
+}
+@media screen and (min-width: 1280px) {
+  html {
+    background: url('images/bg_large.jpg') no-repeat center center fixed; 
+    padding-left: 2rem;
+  }
+  #text_clover{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+  }
+  #lucky_btn{
+    height: 135px;
+    width: 440px;
+    font-size: 65px;
+    border-radius: 15px;
+    padding-top: 1rem;
+    margin-top: 20vh;
+  }
+  .date, .time{
+    font-family: 'eugusto';
+    color: #E7FFC9;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+  .date{
+    font-size: 2rem;
+    margin: 1.5rem 0 1rem .5rem;
+  }
+  .time{
+    font-size: 1.5rem;
+    margin: 0 0 0 .5rem;
+  }
+  #lg_bottom_btn{
+    width: 775px;
+    position: fixed;
+    bottom: 2rem;
+  }
+  #md_bottom_btn{
+    display: none;
+  }
+}
+html { 
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;  
+}
+#lucky_btn{
+    font-family: 'eugusto';
+    background-color:#213933;
+    color: #F3F4CC;
+    cursor: pointer;
+    border: none;
+}
+/*clover*/
+#playPauseBtn{
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+
+#text_clover {
+    cursor: pointer;
+    animation: rotation 10s linear 0s infinite;
+    animation-play-state: paused;
+  }
+  
+  @keyframes rotation {
+    to {
+      transform: rotate(360deg)
+    }
+  }
+
+/*sparkle*/
+/*
+@keyframes star {
+    to {
+      zoom:10%;
+      opacity:0;
+    }
+    from{
+      zoom:100%;
+        opacity:1;
+    }}
+  .star, #main_sparkle{
+  animation-name: star;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  
+  }
+  @keyframes star1 {
+    to {
+   
+      opacity:0;
+    }
+    from{
+   
+        opacity:1;
+    }
+  }
+  .star1, #top_left{
+  animation-name: star1;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-direction: alternate;
+  }
+  @keyframes star2 {
+    0% {
+    opacity:1;
+  }
+  45% {
+  opacity:1;
+  }
+  55% {
+  opacity:0;
+  }
+  100% {
+  opacity:0;
+  }
+  
+  }
+  .star2, #right_sparkle {
+  animation-name: star2;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-direction: alternate;
+  }
+  @keyframes star3 {
+    0% {
+    opacity:1;
+  }
+  45% {
+  opacity:1;
+  }
+  55% {
+  opacity:0;
+  }
+  100% {
+  opacity:0;
+  }
+  
+  }
+  .star2, #bottom_left {
+  animation-name: star2;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 2.5s;
+  animation-direction: alternate;
+  }
+  

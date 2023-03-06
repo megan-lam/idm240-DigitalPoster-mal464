@@ -1,0 +1,232 @@
+body{
+background-color: black;
+}
+html {
+scroll-behavior: smooth;
+}
+.main_img{
+  width: 300px;
+  padding: 1rem;
+}
+img.svg, #text_clover{
+width: 200px;
+height: 200px;
+}
+
+/*Mobile*/
+@media (min-width:320px) and (max-width:479px){
+.svg{
+  padding: 2rem 0;
+}
+.block {
+  width: 100vw;
+}
+.img_container{
+  display: block;
+  z-index: 1;
+  margin-top: 0;
+}
+.img_container .block {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+}
+@media (min-width:480px) and (max-width:767px){
+  .svg{
+    padding: .3rem;
+  }
+  .img_container{
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+  }
+  .block{
+    display: inline;
+  }
+  .img_container{
+    text-align: center;
+  }
+  }
+
+@media (min-width:768px) and (max-width:1279px){
+  .svg{
+    padding: 3%;
+  }
+  .img_container{
+    display: block;
+    margin-top: 0;
+    text-align: center;
+  }
+  .block{
+    display: inline;
+  }
+  .img_container{
+    text-align: center;
+    max-width: 768px;
+    margin: auto;
+  }
+
+}
+
+/*Desktop*/
+@media (min-width:1280px) {
+  .svg, svg{
+    padding: 3rem;
+  
+  }
+  .img_container{
+    display: block;
+    z-index: 1;
+    margin-top: 0;
+  }
+  .block{
+    display: inline;
+  }
+  .img_container{
+    text-align: center;
+    margin: auto;
+  }
+
+}
+
+a{
+text-decoration: none;
+}
+
+/*vinyl*/
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
+}
+.vinyl, #sparkle{
+  width: 200px;
+height: 200px;
+}
+.vinyl{
+cursor: pointer;
+animation: spin 3s linear infinite;
+transform-origin: 50% 50%;
+transform-box: fill-box;
+animation-play-state: paused;
+}
+
+.vinyl:hover{
+animation-play-state: running;
+}
+
+@keyframes spin{
+from {
+    transform: rotate(0deg);
+}
+
+to {
+    transform: rotate(360deg);
+}
+}
+
+/*sparkle*/
+
+@keyframes star {
+  to {
+    zoom:10%;
+    opacity:0;
+  }
+  from{
+    zoom:100%;
+      opacity:1;
+  }}
+.star, #main_sparkle{
+animation-name: star;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 2s;
+animation-direction: alternate;
+
+}
+@keyframes star1 {
+  to {
+ 
+    opacity:0;
+  }
+  from{
+ 
+      opacity:1;
+  }
+}
+.star1, #top_left{
+animation-name: star1;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 3s;
+animation-direction: alternate;
+}
+@keyframes star2 {
+  0% {
+  opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+
+}
+.star2, #right_sparkle {
+animation-name: star2;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 3s;
+animation-direction: alternate;
+}
+@keyframes star3 {
+  0% {
+  opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+
+}
+.star2, #bottom_left {
+animation-name: star2;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 2.5s;
+animation-direction: alternate;
+}
+
+
+/* clover */
+#rotating_x5F_text{
+cursor: pointer;
+animation: spin 15s linear infinite;
+transform-origin: 50% 50%;
+transform-box: fill-box;
+animation-play-state: running;
+}
+
+@keyframes spin {
+from {
+    transform: rotate(0deg);
+}
+
+to {
+    transform: rotate(360deg);
+}
+}
