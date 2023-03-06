@@ -266,12 +266,19 @@ html {
   -o-background-size: cover;
   -moz-background-size: cover;  
 }
+h1, h2{
+  transition: 0.5s;
+}
 #lucky_btn{
     font-family: 'eugusto';
     background-color:#213933;
     color: #F3F4CC;
     cursor: pointer;
     border: none;
+    transition: 0.5s;
+}
+#lg_bottom_btn, #md_bottom_btn, #text_clover{
+  transition: 0.5s;
 }
 /*clover*/
 #playPauseBtn{
@@ -283,6 +290,25 @@ html {
 	cursor: pointer;
 	outline: inherit;
 }
+
+#rotating_x5F_text{
+cursor: pointer;
+animation: spin 15s linear infinite;
+transform-origin: 50% 50%;
+transform-box: fill-box;
+animation-play-state: running;
+}
+
+@keyframes spin {
+from {
+    transform: rotate(0deg);
+}
+
+to {
+    transform: rotate(360deg);
+}
+}
+
 
 
 #text_clover {
@@ -378,3 +404,20 @@ html {
   animation-direction: alternate;
   }
   
+  #lucky_btn:hover{
+    background-color:#305149;
+    transform: scale(1.05);
+  }
+
+  #lg_bottom_btn:hover{
+    transform: scale(1.03);
+  }
+  #md_bottom_btn:hover{
+    transform: scale(1.05);
+  }
+  #g1:hover{
+    transform: scale(1.03);
+  }
+  #g1{
+    transition: 0.5s;
+  }
